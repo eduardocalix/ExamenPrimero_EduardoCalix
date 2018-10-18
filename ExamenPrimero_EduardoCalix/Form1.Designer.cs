@@ -28,29 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.lblNombre = new System.Windows.Forms.Label();
             this.gbSeleccionar = new System.Windows.Forms.GroupBox();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtComentario = new System.Windows.Forms.TextBox();
-            this.btnAceptar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.txtComentario = new System.Windows.Forms.TextBox();
+            this.txtValoracion = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lvProductos = new System.Windows.Forms.ListBox();
             this.gbSeleccionar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dgvProductos
-            // 
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(16, 25);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.Size = new System.Drawing.Size(232, 281);
-            this.dgvProductos.TabIndex = 0;
             // 
             // lblNombre
             // 
@@ -65,16 +56,16 @@
             // 
             // gbSeleccionar
             // 
+            this.gbSeleccionar.Controls.Add(this.lvProductos);
             this.gbSeleccionar.Controls.Add(this.btnSalir);
             this.gbSeleccionar.Controls.Add(this.btnAceptar);
             this.gbSeleccionar.Controls.Add(this.txtComentario);
-            this.gbSeleccionar.Controls.Add(this.txtDireccion);
+            this.gbSeleccionar.Controls.Add(this.txtValoracion);
             this.gbSeleccionar.Controls.Add(this.txtCorreo);
             this.gbSeleccionar.Controls.Add(this.txtNombre);
             this.gbSeleccionar.Controls.Add(this.label3);
             this.gbSeleccionar.Controls.Add(this.lblDireccion);
             this.gbSeleccionar.Controls.Add(this.lblCorreo);
-            this.gbSeleccionar.Controls.Add(this.dgvProductos);
             this.gbSeleccionar.Controls.Add(this.lblNombre);
             this.gbSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSeleccionar.Location = new System.Drawing.Point(12, 24);
@@ -83,74 +74,6 @@
             this.gbSeleccionar.TabIndex = 2;
             this.gbSeleccionar.TabStop = false;
             this.gbSeleccionar.Text = "Seleccione el producto a realizar su reseña/analisis";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(271, 90);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(157, 18);
-            this.lblCorreo.TabIndex = 2;
-            this.lblCorreo.Text = "Correo Electrónico ";
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(271, 140);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(85, 18);
-            this.lblDireccion.TabIndex = 3;
-            this.lblDireccion.Text = "Dirección ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(271, 190);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Comentarios ";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(274, 61);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(249, 26);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Location = new System.Drawing.Point(274, 111);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(249, 26);
-            this.txtCorreo.TabIndex = 6;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(274, 161);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(249, 26);
-            this.txtDireccion.TabIndex = 7;
-            // 
-            // txtComentario
-            // 
-            this.txtComentario.Location = new System.Drawing.Point(271, 216);
-            this.txtComentario.Multiline = true;
-            this.txtComentario.Name = "txtComentario";
-            this.txtComentario.Size = new System.Drawing.Size(252, 89);
-            this.txtComentario.TabIndex = 8;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(109, 317);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(139, 35);
-            this.btnAceptar.TabIndex = 9;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
@@ -162,6 +85,85 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(109, 317);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(139, 35);
+            this.btnAceptar.TabIndex = 9;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // txtComentario
+            // 
+            this.txtComentario.Location = new System.Drawing.Point(271, 216);
+            this.txtComentario.Multiline = true;
+            this.txtComentario.Name = "txtComentario";
+            this.txtComentario.Size = new System.Drawing.Size(252, 89);
+            this.txtComentario.TabIndex = 8;
+            // 
+            // txtValoracion
+            // 
+            this.txtValoracion.Location = new System.Drawing.Point(274, 161);
+            this.txtValoracion.Name = "txtValoracion";
+            this.txtValoracion.Size = new System.Drawing.Size(249, 26);
+            this.txtValoracion.TabIndex = 3;
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(274, 111);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(249, 26);
+            this.txtCorreo.TabIndex = 2;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(274, 61);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(249, 26);
+            this.txtNombre.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(271, 190);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Comentarios ";
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(271, 140);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(88, 18);
+            this.lblDireccion.TabIndex = 3;
+            this.lblDireccion.Text = "Valoración";
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Location = new System.Drawing.Point(271, 90);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(157, 18);
+            this.lblCorreo.TabIndex = 2;
+            this.lblCorreo.Text = "Correo Electrónico ";
+            // 
+            // lvProductos
+            // 
+            this.lvProductos.FormattingEnabled = true;
+            this.lvProductos.ItemHeight = 20;
+            this.lvProductos.Location = new System.Drawing.Point(22, 36);
+            this.lvProductos.Name = "lvProductos";
+            this.lvProductos.Size = new System.Drawing.Size(226, 264);
+            this.lvProductos.TabIndex = 12;
+            this.lvProductos.SelectedIndexChanged += new System.EventHandler(this.lvProductos_SelectedIndexChanged);
+            // 
             // frmReseña
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,7 +172,7 @@
             this.Controls.Add(this.gbSeleccionar);
             this.Name = "frmReseña";
             this.Text = "Reseña/ Analisis de productos";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            this.Load += new System.EventHandler(this.frmReseña_Load);
             this.gbSeleccionar.ResumeLayout(false);
             this.gbSeleccionar.PerformLayout();
             this.ResumeLayout(false);
@@ -178,19 +180,18 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.GroupBox gbSeleccionar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtComentario;
-        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtValoracion;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblCorreo;
+        private System.Windows.Forms.ListBox lvProductos;
     }
 }
 
